@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-feature 'Custom Pages' do
+feature "Custom Pages" do
   context "Override existing page" do
     scenario "See default content when custom page is not published" do
       custom_page = create(:site_customization_page,
-        slug: 'conditions',
+        slug: "conditions",
         title: "Custom conditions",
         content: "New text for conditions page",
         print_content_flag: true
@@ -20,7 +20,7 @@ feature 'Custom Pages' do
 
     scenario "See custom content when custom page is published" do
       custom_page = create(:site_customization_page, :published,
-        slug: 'conditions',
+        slug: "conditions",
         title: "Custom conditions",
         content: "New text for conditions page",
         print_content_flag: true
@@ -39,7 +39,7 @@ feature 'Custom Pages' do
     context "Draft" do
       scenario "See page" do
         custom_page = create(:site_customization_page,
-          slug: 'other-slug',
+          slug: "other-slug",
           title: "Custom page",
           content: "Text for new custom page",
           print_content_flag: false
@@ -54,7 +54,7 @@ feature 'Custom Pages' do
     context "Published" do
       scenario "See page" do
         custom_page = create(:site_customization_page, :published,
-          slug: 'other-slug',
+          slug: "other-slug",
           title: "Custom page",
           content: "Text for new custom page",
           print_content_flag: false
@@ -70,7 +70,7 @@ feature 'Custom Pages' do
 
       scenario "Listed in more information page" do
         custom_page = create(:site_customization_page, :published,
-          slug: 'another-slug', title: "Another custom page",
+          slug: "another-slug", title: "Another custom page",
           subtitle: "Subtitle for custom page",
           more_info_flag: true
         )
@@ -83,7 +83,7 @@ feature 'Custom Pages' do
 
       scenario "Not listed in more information page" do
         custom_page = create(:site_customization_page, :published,
-          slug: 'another-slug', title: "Another custom page",
+          slug: "another-slug", title: "Another custom page",
           subtitle: "Subtitle for custom page",
           more_info_flag: false
         )
