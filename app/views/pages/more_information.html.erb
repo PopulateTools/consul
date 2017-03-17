@@ -66,6 +66,16 @@
           <span><%= t('pages.more_information.description.signature_sheet') %></span>
       <% end %>
       </li>
+
+      <% SiteCustomization::Page.with_more_info_flag.each do |custom_page| %>
+        <li>
+        <%= link_to page_path(custom_page.slug) do %>
+            <%= custom_page.title %>
+            <br>
+            <span><%= custom_page.subtitle %></span>
+        <% end %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
