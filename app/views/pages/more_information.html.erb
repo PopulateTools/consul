@@ -3,6 +3,8 @@
   <div class="more-information small-12 medium-9 large-7 column">
     <h1><%= t('pages.titles.more_information') %></h1>
     <ul class="no-bullet">
+      <%= render :more_information_static_links if SiteCustomization::Page.count.zero? %>
+
       <% SiteCustomization::Page.with_more_info_flag.each do |custom_page| %>
         <li>
         <%= link_to page_path(custom_page.slug) do %>
