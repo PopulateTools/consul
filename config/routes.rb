@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  if Rails.env.development? || Rails.env.staging?
+    get '/sandbox' => 'sandbox#index'
+    get '/sandbox/*template' => 'sandbox#show'
+  end
+
   devise_for :users, controllers: {
                        registrations: 'users/registrations',
                        sessions: 'users/sessions',
@@ -217,6 +222,10 @@ Rails.application.routes.draw do
     end
 
     resources :geozones, only: [:index, :new, :create, :edit, :update, :destroy]
+
+    namespace :site_customization do
+      resources :pages, except: [:show]
+    end
   end
 
   namespace :moderation do
