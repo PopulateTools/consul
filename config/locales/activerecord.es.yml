@@ -43,6 +43,9 @@ es:
       site_customization/page:
         one: Página
         other: Páginas
+      site_customization/image:
+        one: Imagen
+        other: Imágenes
     attributes:
       budget:
         name: "Nombre"
@@ -140,3 +143,8 @@ es:
           attributes:
             slug:
               slug_format: "deber ser letras, números, _ y -"
+        site_customization/image:
+          attributes:
+            image:
+              image_width: "Width must be %{required_width}px"
+              image_height: "Width must be %{required_height}px"
