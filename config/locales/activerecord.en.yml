@@ -46,6 +46,9 @@ en:
       site_customization/image:
         one: Custom image
         other: Custom images
+      site_customization/content_block:
+        one: Custom content block
+        other: Custom content blocks
     attributes:
       budget:
         name: "Name"
@@ -117,6 +120,13 @@ en:
         status: Status
         title: Title
         updated_at: Updated at
+      site_customization/image:
+        name: Name
+        image: Image
+      site_customization/content_block:
+        name: Name
+        locale: locale
+        body: Body
     errors:
       models:
         user:

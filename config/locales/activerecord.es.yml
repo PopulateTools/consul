@@ -46,6 +46,9 @@ es:
       site_customization/image:
         one: Imagen
         other: Imágenes
+      site_customization/content_block:
+        one: Bloque
+        other: Bloques
     attributes:
       budget:
         name: "Nombre"
@@ -112,6 +115,13 @@ es:
         status: Estado
         title: Título
         updated_at: última actualización
+      site_customization/image:
+        name: Nombre
+        image: Imagen
+      site_customization/content_block:
+        name: Nombre
+        locale: Idioma
+        body: Contenido
     errors:
       models:
         user:
