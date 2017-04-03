@@ -127,6 +127,8 @@ en:
         name: Name
         locale: locale
         body: Body
+        more_info_flag: Show in more information page
+        print_content_flag: Print content button
     errors:
       models:
         user:
