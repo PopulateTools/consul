@@ -513,7 +513,7 @@ es:
           title: Páginas
           see_page: Ver página
         new:
-          back: Back
+          back: Volver
           title: Página nueva
         page:
           created_at: Creada

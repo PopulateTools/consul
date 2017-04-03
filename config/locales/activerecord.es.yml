@@ -112,6 +112,8 @@ es:
         status: Estado
         title: Título
         updated_at: última actualización
+        more_info_flag: Mostrar en "Más información"
+        print_content_flag: Botón de imprimir contenido
     errors:
       models:
         user:
