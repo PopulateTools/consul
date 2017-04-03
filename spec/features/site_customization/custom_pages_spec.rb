@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 feature "Custom Pages" do
+  scenario "No custom pages" do
+    visit "/more_information"
+
+    expect(page).to have_content("More information")
+  end
+
   context "Override existing page" do
     scenario "See default content when custom page is not published" do
       custom_page = create(:site_customization_page,
