@@ -146,5 +146,5 @@ es:
         site_customization/image:
           attributes:
             image:
-              image_width: "Width must be %{required_width}px"
-              image_height: "Width must be %{required_height}px"
+              image_width: "Debe tener %{required_width}px de ancho"
+              image_height: "Debe tener %{required_height}px de alto"
