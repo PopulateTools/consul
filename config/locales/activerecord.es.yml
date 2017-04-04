@@ -115,6 +115,8 @@ es:
         status: Estado
         title: Título
         updated_at: última actualización
+        more_info_flag: Mostrar en "Más información"
+        print_content_flag: Botón de imprimir contenido
       site_customization/image:
         name: Nombre
         image: Imagen
@@ -122,8 +124,6 @@ es:
         name: Nombre
         locale: Idioma
         body: Contenido
-        more_info_flag: Mostrar en "Más información"
-        print_content_flag: Botón de imprimir contenido
     errors:
       models:
         user:
