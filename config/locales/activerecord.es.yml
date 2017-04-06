@@ -115,6 +115,8 @@ es:
         status: Estado
         title: Título
         updated_at: última actualización
+        more_info_flag: Mostrar en "Más información"
+        print_content_flag: Botón de imprimir contenido
       site_customization/image:
         name: Nombre
         image: Imagen
@@ -156,5 +158,5 @@ es:
         site_customization/image:
           attributes:
             image:
-              image_width: "Width must be %{required_width}px"
-              image_height: "Width must be %{required_height}px"
+              image_width: "Debe tener %{required_width}px de ancho"
+              image_height: "Debe tener %{required_height}px de alto"
